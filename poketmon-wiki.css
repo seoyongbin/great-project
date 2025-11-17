@@ -1,0 +1,57 @@
+/* -------------------- 1. 기본 설정 및 주요 속성 -------------------- */
+body {
+    /* 속성: 글꼴, 기본 색상 */
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* 배경색: 밝은 회색 */
+    color: #333; /* 기본 글자색: 진한 회색 */
+    line-height: 1.6; /* 줄 간격 설정 */
+    margin: 20px; /* 박스 모델: body 전체 바깥 여백 20px */
+}
+
+h1, h2 {
+    color: #cc0000; /* 포켓몬 테마색 (붉은색) */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* -------------------- 2. 박스 모델 적용: 포켓몬 상세 카드 -------------------- */
+/* 이 스타일은 pikachu.html과 charizard.html 내용에 적용됩니다. */
+.pokemon-card {
+    background-color: white;
+    width: 80%; /* 내용의 너비를 80%로 설정 (반응형 대비) */
+    max-width: 600px; /* 최대 너비를 600px로 제한 */
+    margin: 30px auto; /* 박스 모델: 위/아래 30px, 가로 중앙 정렬 */
+    padding: 20px; /* 박스 모델: 안쪽 여백(패딩) 20px */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+/* -------------------- 3. 링크 및 가상 클래스 -------------------- */
+a {
+    color: #007bff;
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+a:hover { /* 가상 클래스: 마우스가 링크 위에 올라갔을 때 */
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* -------------------- 4. Flexbox 레이아웃 (index.html 리스트) -------------------- */
+.pokedex-list {
+    /* ul 태그에 이 클래스를 적용하면 리스트 항목이 중앙 정렬됩니다. */
+    display: flex; /* Flexbox 활성화 */
+    flex-direction: column; /* 항목을 세로(column) 방향으로 배치 */
+    align-items: center; /* 항목들을 가로 축 중앙으로 정렬 */
+    list-style-type: none; /* 리스트 기본 점/숫자 제거 */
+    padding: 0;
+}
+
+/* -------------------- 5. 이미지 스타일 -------------------- */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto; /* 이미지 중앙 정렬 */
+}
